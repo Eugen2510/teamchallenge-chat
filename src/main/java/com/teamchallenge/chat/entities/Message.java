@@ -5,13 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(name = "messages")
 @Getter
 @Setter
-public class Messages {
+public class Message {
 
     @Id
     @Column(name = "id_message")
-    private int idMessage;
+    private long idMessage;
 
     @Column(name = "text_Message")
     private String textMessage;

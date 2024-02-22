@@ -1,9 +1,7 @@
 package com.teamchallenge.chat.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.teamchallenge.chat.dto.UserDTO;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,9 +12,14 @@ import lombok.Setter;
 public class User {
     @Id
     @Column(name = "id_user")
-    private int idUser;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idUser;
 
-    @Column(name = "user_name")
-    private String userName;
+    @Column(name = "username")
+    private String username;
+
+    public UserDTO convertToUserDTO(){
+        return new UserDTO(this.username);
+    }
 
 }

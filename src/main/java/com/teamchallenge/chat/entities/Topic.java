@@ -10,7 +10,7 @@ import lombok.Setter;
 public class Topic {
     @Id
     @Column(name = "id_topic")
-    private int idTopic;
+    private long idTopic;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "city_id")
