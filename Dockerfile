@@ -16,5 +16,5 @@ WORKDIR /app
 #ENV DB_PASSWORD=myPassword123
 
 # Запустите приложение
-CMD ["sh", "-c", "sleep 30 && java -jar chat-alpha.jar"]
+CMD ["sh", "-c", "java -jar chat-alpha.jar"]
 #CMD ["java", "-jar", "chat-alpha.jar"]
