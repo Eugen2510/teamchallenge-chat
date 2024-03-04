@@ -15,5 +15,5 @@
 - ввести в терміналі команду 'docker image rm <image_id>' - імедж видалиться
 - повторити дії з блку "For running"
 
-*P.S. Для більш зручного тестування, можна внести зміни в файл application.properties тобто вказати порт до своєї локальної БД, юзера та пароль*
+*P.S. Для більш зручного тестування, можна внести зміни в файл application.properties тобто вказати порт до своєї локальної БД, юзера та пароль <br>Changes on branch "docker_branch" successfully running app from docker-compose*
 
