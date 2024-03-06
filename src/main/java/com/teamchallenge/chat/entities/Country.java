@@ -1,10 +1,14 @@
 package com.teamchallenge.chat.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.teamchallenge.chat.dto.CountryDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(name = "country")
 @Getter
 @Setter
 public class Country {
@@ -19,4 +23,8 @@ public class Country {
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "region_id")
     private Region region;
+
+    public CountryDTO convertToDTO(Country country){
+        return new CountryDTO(country.getCountryName());
+    }
 }

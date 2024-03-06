@@ -18,4 +18,5 @@ public class City {
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "country_id")
     private Country country;
+
 }
