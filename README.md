@@ -16,5 +16,11 @@
     - запушити зміни на github
     - дані дії виконувати після тесту у себе локально, в тому випадку, якщо все працює
 
-*P.S. Для більш зручного тестування, можна внести зміни в файл application.properties тобто вказати порт до своєї локальної БД, юзера та пароль*
+## Для QA
+- додаток розгорнуто за адресою https://teamchallenge-chat.onrender.com
+- доступні ендпоїнти:
+  - https://teamchallenge-chat.onrender.com/welcome-page/set-username - post встановлює ім'я юзера, додає в кукі id юзера, при повторній відправці імені від юзера з тим самим id, новий до бд не додається, оновлюється запис в бд
+  - https://teamchallenge-chat.onrender.com/country/get-all - get повертає усі країни
+  - https://teamchallenge-chat.onrender.com/country/get-id/{id} - get повертає країну за id
+  - https://teamchallenge-chat.onrender.com/country/get-name/Андорра - get повертає країну за іменем
 
