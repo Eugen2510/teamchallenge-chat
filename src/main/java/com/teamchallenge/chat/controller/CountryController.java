@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CountryController {
     private final CountryService countryService;
-    @GetMapping("/get-All")
+    @GetMapping("/get-all")
     public List<CountryDTO> getAllCountries(){
         return countryService.getAllCountries();
     }
