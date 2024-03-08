@@ -16,11 +16,14 @@
     - запушити зміни на github
     - дані дії виконувати після тесту у себе локально, в тому випадку, якщо все працює
 
-## Для QA
+## Для QA та Frontend
 - додаток розгорнуто за адресою https://teamchallenge-chat.onrender.com
 - доступні ендпоїнти:
-  - https://teamchallenge-chat.onrender.com/welcome-page/set-username - post встановлює ім'я юзера, додає в кукі id юзера, при повторній відправці імені від юзера з тим самим id, новий до бд не додається, оновлюється запис в бд
+  - https://teamchallenge-chat.onrender.com/welcome-page/set-username - post, тіло запиту {"username" : "Alexandro"} встановлює ім'я юзера, додає в кукі id юзера, при повторній відправці імені від юзера з тим самим id, новий до бд не додається, оновлюється запис в бд
   - https://teamchallenge-chat.onrender.com/country/get-all - get повертає усі країни
   - https://teamchallenge-chat.onrender.com/country/get-id/{id} - get повертає країну за id
-  - https://teamchallenge-chat.onrender.com/country/get-name/Андорра - get повертає країну за іменем
+  - https://teamchallenge-chat.onrender.com/country/get-name/{country_name} - get повертає країну за іменем
+  - https://teamchallenge-chat.onrender.com/region/get-All - get повертає усі доступні регіони
+  - https://teamchallenge-chat.onrender.com/region/get-id/{id} - get повертає регіон за id
+  - https://teamchallenge-chat.onrender.com/region/get-name/{name} - get повертає регіон за іменем регіону
 
